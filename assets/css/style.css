@@ -1,0 +1,122 @@
+*{
+    border:none;
+    padding:0;
+    margin:0;
+    -webkit-box-sizing:border-box;
+       -moz-box-sizing:border-box;
+            box-sizing:border-box;
+}
+
+html,
+body{
+    height:100%;
+}
+body {
+    font-family: 'Helvetica', sans-serif;
+}
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+aside {
+    width: 266px;
+    height: 100%;
+    background-color: #eeeeee;
+    padding: 0 5px;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+aside header {
+    text-align: center;
+    padding: 10px;
+}
+
+span {
+    font-size: 12px;
+    background-color: #cccccc;
+    border-radius: 3px 3px 0 0;
+    padding: 5px;
+}
+
+#assets {
+    width: 100%;
+    height: 96px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    overflow-y: scroll;
+    margin-bottom: 15px;
+}
+
+#assets .tile_asset {
+    display: inline-block;
+    width: 25%;
+}
+#assets .tile_asset img {
+    width: 100%;
+}
+#assets .tile_asset.active img {
+    border: 2px solid #f00;
+}
+
+.btn {
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 40px;
+    background-color: #2fa1fe;
+    border-radius: 5px;
+}
+
+#container {
+    width: auto;
+    height: 100%;
+    border: 2px solid #454545;
+    border-radius: 3px;
+    margin-left: 270px;
+    overflow: scroll;
+    box-shadow: 0 0 0 5px rgba(0,0,0,0.2);
+}
+
+.tile {
+    color: transparent;
+    text-indent: -9999px;
+    text-align: center;
+    cursor: crosshair;
+    background: rgba(255,255,255,0.5);
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
+}
+.tile:hover {
+    border: 2px solid #f00;
+}
+.tile img {
+    display: block;
+    max-width: 100%;
+}
+
+small {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+small a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 3px;
+    padding: 10px;
+}
